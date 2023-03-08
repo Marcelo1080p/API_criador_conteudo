@@ -6,4 +6,4 @@ const app = express();
 app.use(express.json());
 app.use(Routes);
 
-app.listen(3000, console.log("Servidor inciado"))
+app.listen(3001, console.log("Servidor inciado"))

@@ -10,22 +10,32 @@ module.exports = {
         allowNull: false,
         primaryKey: true
       },
+
       nome: {
         type: Sequelize.STRING,
         allowNull: false
       },
+
+      tipoDev: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+
       imgLink: {
         type: Sequelize.STRING,
         allowNull: false
       },
+
       insta: {
         type: Sequelize.STRING,
         allowNull: false
       },
+
       youTube: {
         type: Sequelize.STRING,
         allowNull: false
       },
+
       createdAt: {
         type: Sequelize.DATE,
       },
