@@ -1,0 +1,33 @@
+import { useEffect, useState } from 'react'
+import { getAllCriadores } from './api';
+import './App.css'
+import { Card } from './Components/Cards/Card.jsx';
+
+function App() {
+
+  const [criador, setCriador] = useState([]);
+  
+  useEffect(() => {
+    getAllCriadores().then((res) => setCriador(res.data));
+  }, []);
+
+  console.log(criador)
+  return (
+    <div className="App">
+      <section className='container'>
+        {criador.map((criadorContent) => (
+          <Card
+           img={criadorContent.imgLink}
+           nome={criadorContent.nome}
+           tipoDev={criadorContent.tipoDev}
+           insta={criadorContent.insta}
+           youTube={criadorContent.youTube}
+          />
+        ))}
+        
+      </section>
+    </div>
+  );
+};
+
+export default App

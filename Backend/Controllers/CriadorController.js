@@ -8,7 +8,11 @@ module.exports=  {
     },
 
     async index( req, res ) {
-        const criador = await Criador.findAll();
+        const criador = await Criador.findAll({
+            order: [
+                ['id', 'ASC']
+            ]
+        });
         return res.json(criador)
     }
 }
