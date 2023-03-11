@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(to right, #6441a5, #2a0845);
+    background: linear-gradient(to right, #6441a5, #2a0845);
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, #00C1C2, #E75590);
+    left: 10%;
+    border-radius: 50%;
+    filter: blur(90px);
+    width: 550px;
+    height: 550px;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to left, #759, #E75590);
+    left: 70%;
+    top: 10%;
+    border-radius: 50%;
+    filter: blur(90px);
+    width: 550px;
+    height: 550px;
+}

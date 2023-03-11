@@ -3,6 +3,8 @@ import { getAllCriadores } from './api';
 import './App.css'
 import { Card } from './Components/Cards/Card.jsx';
 
+
+
 function App() {
 
   const [criador, setCriador] = useState([]);
@@ -11,9 +13,12 @@ function App() {
     getAllCriadores().then((res) => setCriador(res.data));
   }, []);
 
-  console.log(criador)
+ 
   return (
     <div className="App">
+      <main>
+
+      </main>
       <section className='container'>
         {criador.map((criadorContent) => (
           <Card
