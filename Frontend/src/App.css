@@ -1,6 +1,5 @@
 .container {
     position: relative;
-    border: 1px solid;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;

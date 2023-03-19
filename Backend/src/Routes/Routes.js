@@ -4,7 +4,8 @@ const Routes = express.Router();
 
 
 Routes.post("/criador", CriadorController.store);
-Routes.get("/criador", CriadorController.index)
+Routes.get("/criador", CriadorController.index);
+Routes.get("/criador/:nome", CriadorController.findByName);
 
 
 module.exports = Routes;

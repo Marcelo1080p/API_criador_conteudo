@@ -1,6 +1,21 @@
 'use strict';
 
 /** @type {import('sequelize-cli').Migration} */
+const MeuModelo = sequelize.define('meu_modelo', {
+  propriedade1: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  propriedade2: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  propriedade3: {
+    type: DataTypes.STRING,
+    allowNull: false
+  }
+});
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     queryInterface.createTable("criador_conteudos", {
@@ -35,7 +50,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
+      redes: {
+        type: MeuModelo
 
+      },
       createdAt: {
         type: Sequelize.DATE,
       },
