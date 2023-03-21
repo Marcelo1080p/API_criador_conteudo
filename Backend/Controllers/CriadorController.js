@@ -28,6 +28,6 @@ module.exports=  {
                 }
             }
         });
-        return res.json(criador)
+        return res.json(criador); 
     }
 }

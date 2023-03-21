@@ -1,4 +1,5 @@
 .container {
+    min-height: 95vh;
     position: relative;
     display: flex;
     flex-wrap: wrap;
