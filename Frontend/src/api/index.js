@@ -7,3 +7,7 @@ const api = axios.create({
 export const getAllCriadores = () => {
     return api.get("/criador")
 };
+
+export const getCriadorByName = (nome) => {
+    return api.get(`/criador/search/${nome}`);
+}

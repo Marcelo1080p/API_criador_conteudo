@@ -1,6 +1,7 @@
 import "./ContainerMain.css"
 
-export const ContainerMain = () => {
+export const ContainerMain = (props) => {
+ 
     return(
         <main className="containerMain">
             

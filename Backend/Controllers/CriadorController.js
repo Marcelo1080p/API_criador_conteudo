@@ -20,14 +20,14 @@ module.exports=  {
 
     async findByName(req, res) {
         const { nome } = req.params;
-        const criador = await Criador.findOne({
+        
+        const criador = await Criador.findAll({
             where: {
-              nome: { [Op.iLike]: `%${nome}%` },
-            },
+                nome: {
+                    [Op.iRegexp]: `${nome}`
+                }
+            }
         });
-        if(!criador) {
-            return res.status(404).json({ message: "Pessoa não encontrada" });
-        }
-        return res.json(criador);
+        return res.json(criador)
     }
 }

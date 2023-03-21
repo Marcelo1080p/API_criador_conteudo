@@ -7,7 +7,7 @@ export const Card = (props) => {
     }
 
     return(
-        <section className="container-card">
+        <section className="container-card" >
             <img src={props.img}/>
             <section className="dados">
                 <div className="descricao">

@@ -1,4 +1,13 @@
 .containerMain {
     background-color: #FFF;
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid;
+}
+
+.containerMain input {
+    width: 350px;
+    height: 100px;
 }
