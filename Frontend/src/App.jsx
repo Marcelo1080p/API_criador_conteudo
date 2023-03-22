@@ -3,6 +3,7 @@ import { getAllCriadores, getCriadorByName } from "./api";
 import "./App.css";
 import { Card } from "./Components/Cards/Card.jsx";
 import { Input } from "antd"
+import InputPesquisa from "./Components/InputPesquisa";
 
 function App() {
   const [criador, setCriador] = useState([]);
@@ -22,18 +23,16 @@ function App() {
 
   return (
     <div className="App">
-      <main className="pesquisa">
-        <Search
-          onChange={(e) => setNome(e.target.value)}
-        />
-        <input
+        <InputPesquisa
+          name="nome"
+          id="nome"
+          value={nome}
           type="text"
-          placeholder="Hello"
-          
+          placeholder="Pesquise por um criador de conteúdo"
+          aoAlterado={e => setNome(e)}
         />
-      </main>
 
-      <section className="container">
+      <section className="containerS">
         {criador.map((criadorContent) => (
           <Card
             key={criadorContent.id}

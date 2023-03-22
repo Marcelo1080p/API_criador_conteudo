@@ -1,4 +1,4 @@
-.container {
+.containerS {
     min-height: 95vh;
     position: relative;
     display: flex;
@@ -12,7 +12,7 @@
     overflow: hidden;
 }
 
-.container::before {
+.containerS::before {
     content: "";
     position: absolute;
     background: linear-gradient(to right, #00C1C2, #E75590);
@@ -23,7 +23,7 @@
     height: 550px;
 }
 
-.container::after {
+.containerS::after {
     content: "";
     position: absolute;
     background: linear-gradient(to left, #759, #E75590);
@@ -33,4 +33,11 @@
     filter: blur(90px);
     width: 550px;
     height: 550px;
+}
+
+
+
+.containerPesquisa .inputPesquisa {
+    width: 450px;
+ 
 }
