@@ -1,79 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
 .mainContainer {
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background: #FFF ;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
 }
 
 .inputBox {
-    position: relative;
-    width: 490px;
-    display: flex;
-    padding: 1rem;
-    height: 80px;
-
+  position: relative;
+  width: 490px;
+  display: flex;
+  padding: 1rem;
+  height: 80px;
 }
 
 .inputBox input {
-    width: 400px;
-    padding: 11px;
-    border: none;
-    background-color: transparent;
-    border-radius: 5px;
-    outline: none;
-    color: rgba(255, 255, 255, 0.829);
-    font-size: 1em;
+  width: 400px;
+  padding: 11px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
 }
 
 .inputBox span {
-    position: absolute;
-    background-color: #2e1e45;
-    left: 20%;
-    padding: 5px;
-    font-size: .7rem;
-    font-family: 'Poppins', sans-serif;
-    color: #FFF;
-    text-transform: uppercase;
-    transform:  translateY(-20px);
+  position: absolute;
+  background-color: #2e1e45;
+  left: 20%;
+  padding: 5px;
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  transform: translateY(-20px);
 }
 
 .container {
-    display: flex;
-    gap: .1rem;
-    border: 1px solid #2e1e45;
-    border-radius: 5px;
+  display: flex;
+  gap: 0.1rem;
+  border: 1px solid #2e1e45;
+  border-radius: 5px;
 }
 
 .inputBox .pesquisa {
-    background-color: #2e1e45;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #2e1e45;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputBox .pesquisa p {
-    position: relative;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    border: 3px solid #FFF;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  position: relative;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .inputBox .pesquisa p::before {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 10px;
-    background-color: #FFF;
-    top: 10px;
-    left: 100%;
-    transform: rotate(130deg);
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 10px;
+  background-color: #fff;
+  top: 10px;
+  left: 100%;
+  transform: rotate(130deg);
 }
