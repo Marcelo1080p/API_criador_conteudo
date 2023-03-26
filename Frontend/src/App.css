@@ -1,15 +1,13 @@
 .containerS {
-    min-height: 95vh;
+    min-height: 70vh;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
-    padding: 1rem 0;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     background: -webkit-linear-gradient(to right, #6441a5, #2a0845);
     background: linear-gradient(to right, #6441a5, #2a0845);
-    overflow: hidden;
 }
 
 .containerS::before {

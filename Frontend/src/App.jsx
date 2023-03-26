@@ -8,7 +8,6 @@ import InputPesquisa from "./Components/InputPesquisa";
 function App() {
   const [criador, setCriador] = useState([]);
   const [nome, setNome] = useState("");
-  const { Search } = Input;
   useEffect(() => {
     if (nome !== "") {
       getCriadorByName(nome)

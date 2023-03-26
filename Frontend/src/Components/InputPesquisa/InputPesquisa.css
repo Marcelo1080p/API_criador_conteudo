@@ -1,13 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
 .mainContainer {
-  height: 250px;
+  position: relative;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background: #fff;
+  background: -webkit-linear-gradient(to right, #6441a5, #2a0845);
+  background: linear-gradient(to right, #6441a5, #2a0845);
 }
+
+.mainContainer::before {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(90deg, #2e1e45, #00C1C2, #2a0845);  
+  left: 10%;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.mainContainer::after {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(90deg, #2e1e45, #00C1C2, #2a0845);
+  bottom: 50%;
+  right: 10%;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
 
 .inputBox {
   position: relative;
@@ -29,12 +55,12 @@
 
 .inputBox span {
   position: absolute;
-  background-color: #2e1e45;
+  background-color: #FFF;
   left: 20%;
   padding: 5px;
   font-size: 0.7rem;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #2e1e45;
   text-transform: uppercase;
   transform: translateY(-20px);
 }
@@ -42,12 +68,13 @@
 .container {
   display: flex;
   gap: 0.1rem;
-  border: 1px solid #2e1e45;
+  border: 1px solid #FFF;
   border-radius: 5px;
+  
 }
 
 .inputBox .pesquisa {
-  background-color: #2e1e45;
+  background-color: #FFF;
   width: 50px;
   display: flex;
   justify-content: center;
@@ -59,7 +86,7 @@
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  border: 3px solid #fff;
+  border: 3px solid #2e1e45;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -70,7 +97,7 @@
   content: "";
   width: 3px;
   height: 10px;
-  background-color: #fff;
+  background-color: #2e1e45;
   top: 10px;
   left: 100%;
   transform: rotate(130deg);
